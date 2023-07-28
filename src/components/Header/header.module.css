@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3.333em 0 2.666em 0;
+}
+.logo {
+  width: 13.58em;
+}
+.list {
+  display: flex;
+  align-items: center;
+}
+.item:not(:last-child) {
+  margin-right: 2em;
+}
+.item {
+  font-size: 1.25em;
+  line-height: 1.333em;
+}
+.navLink {
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+.active,
+.navLink:hover,
+.navLink:focus {
+  color: var(--blue);
+}

@@ -1,0 +1,18 @@
+.button {
+  padding: 1em 1.75em;
+  font-size: 1.333em;
+  font-weight: 500;
+  line-height: 104.5%;
+  border: 0.1em solid transparent;
+  border-radius: 0.9375em;
+  color: var(--white);
+  background: var(--blue);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--white);
+  color: var(--blue);
+  border-color: var(--blue);
+}
