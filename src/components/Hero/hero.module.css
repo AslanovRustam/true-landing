@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 2.5em;
+  padding: 6.83em;
+  margin-top: 8em;
+  background: var(--white);
+}
+.left {
+  margin-right: 4.08em;
+}
+.image {
+  width: 50.16em;
+}
+.title {
+  font-size: 3.333em;
+  font-weight: 500;
+  line-height: 115%;
+}
+.description {
+  margin: 2em 0;
+  font-size: 1.666em;
+  line-height: 130%;
+}
+.cube {
+  position: absolute;
+  right: -24em;
+  bottom: -18em;
+  z-index: -1;
+}

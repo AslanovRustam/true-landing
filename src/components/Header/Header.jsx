@@ -8,7 +8,10 @@ export default function Header() {
   return (
     <Container>
       <div className={s.header}>
-        <img className={s.logo} src={logo} alt="logo" />
+        <NavLink to="/">
+          <img className={s.logo} src={logo} alt="logo" />
+        </NavLink>
+
         <ul className={s.list}>
           <li className={s.item}>
             <NavLink
@@ -51,7 +54,12 @@ export default function Header() {
             </NavLink>
           </li>
         </ul>
-        <Button text="White paper" />
+
+        <Button
+          text="White paper"
+          type="button"
+          onClick={() => console.log("click")}
+        />
       </div>
     </Container>
   );
