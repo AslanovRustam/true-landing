@@ -11,6 +11,7 @@
   --black: #000000;
   --white: #ffffff;
   --blue: #2569f6;
+  --blue2: #ddecff;
 }
 body {
   margin: 0;
@@ -27,6 +28,7 @@ html {
   font-style: normal;
   font-weight: 400;
   height: 100%;
+  overflow-x: hidden;
 }
 * {
   margin: 0;
