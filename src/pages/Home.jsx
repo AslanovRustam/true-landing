@@ -1,3 +1,4 @@
+import Contacts from "../components/Contacts/Contacts";
 import Hero from "../components/Hero/Hero";
 import Introduction from "../components/Introduction/Introduction";
 

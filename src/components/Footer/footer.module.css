@@ -1,0 +1,46 @@
+footer,
+.list,
+.itemContact,
+.listLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.rights,
+.item,
+.itemContact,
+.itemLink {
+  margin-right: 3.075em;
+  font-size: 1.167em;
+}
+.item:last-child {
+  border-right: 0.15em solid var(--grey3);
+  padding-right: 4em;
+}
+.itemLink {
+  margin-right: 2em;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.rights {
+  color: var(--grey3);
+
+  line-height: 171%;
+}
+.itemContact p {
+  margin-right: 1em;
+}
+.mail {
+  color: var(--blue);
+}
+.link {
+  color: var(--black);
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover,
+.link:focus,
+.itemLink:hover,
+.itemLink:focus {
+  color: var(--blue);
+}

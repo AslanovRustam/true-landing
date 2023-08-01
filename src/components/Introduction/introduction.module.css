@@ -2,9 +2,14 @@
   position: relative;
   margin-top: 6.67em;
 }
-.titleContainer {
+.titleContainer,
+.titleContainer2 {
   width: 81em;
   margin: 0 auto;
+}
+.titleContainer2 {
+  width: 70em;
+  margin-top: 6.67em;
 }
 .wrapper {
   display: flex;

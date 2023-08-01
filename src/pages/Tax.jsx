@@ -1,5 +1,11 @@
-import React from "react";
+import CaseStudy from "../components/CaseStudy/CaseStudy";
+import TaxCollection from "../components/TaxCollection/taxCollection";
 
 export default function Tax() {
-  return <div>Tax</div>;
+  return (
+    <>
+      <TaxCollection />
+      <CaseStudy />
+    </>
+  );
 }

@@ -12,6 +12,11 @@
   --white: #ffffff;
   --blue: #2569f6;
   --blue2: #ddecff;
+  --blue3: #ddecff;
+  --blue4: #ddecff;
+  --grey: #a2a2a2;
+  --grey2: #d3d3d3;
+  --grey3: #787878;
 }
 body {
   margin: 0;
@@ -20,8 +25,10 @@ body {
     sans-serif;
   background-color: var(--mainBg);
   color: var(--black);
+  /* overflow-x: hidden; */
 }
-html {
+html,
+body {
   box-sizing: border-box;
   font-size: 0.833vw;
   font-family: "Stolzl";

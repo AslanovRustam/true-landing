@@ -1,0 +1,81 @@
+.сontainer {
+  position: relative;
+  margin: 7.08em 16.83em 2.67em 16.83em;
+  text-align: center;
+  padding: 4.67em 12.25em;
+  border-radius: 2.5em;
+  background-color: var(--white);
+}
+.title {
+  text-align: center;
+  font-size: 3.33em;
+  font-weight: 500;
+  line-height: 102%;
+}
+.form,
+.label {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  align-items: center;
+}
+.label {
+  position: relative;
+  margin-bottom: 2.25em;
+  align-items: flex-start;
+  font-size: 1.34em;
+  font-weight: 500;
+  line-height: 150%;
+}
+.input {
+  font-size: 1em;
+  width: 50em;
+  padding: 0.5em 0;
+  border: none;
+  outline: none;
+  border-bottom: 0.15em solid var(--black);
+  transition: all 0.3s ease-in-out;
+}
+.input:hover,
+.input:focus {
+  border-color: var(--blue);
+}
+.error {
+  position: absolute;
+  top: 7.4em;
+  font-size: 0.5em;
+  color: red;
+}
+.button {
+  width: 23.23em;
+  padding: 1.11em 1.94em;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 104.5%;
+  border-radius: 1em;
+  border: 0.1em solid transparent;
+  color: var(--grey);
+  background-color: var(--grey2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.active {
+  color: var(--white);
+  background-color: var(--blue);
+}
+.cube1,
+.cube2 {
+  position: absolute;
+  width: 34.67em;
+  z-index: -1;
+}
+.cube1 {
+  top: -1em;
+  right: -24em;
+}
+.cube2 {
+  left: -23em;
+  bottom: -7em;
+}

@@ -42,6 +42,20 @@ export default function Introduction() {
             </li>
           ))}
         </ul>
+        <div className={s.titleContainer2}>
+          <div className={s.wrapper}>
+            <h2 className={s.title}>Conclusion</h2>
+            <img className={s.icon} src={dots} alt="dots" />
+          </div>
+          <div className={s.subTitleContainer}>
+            <p className={s.subTitle}>
+              Trueplay’s B2G solution offers a revolutionary approach to online
+              gambling regulation. We’re committed to creating a safe,
+              transparent, and accountable environment for online gambling,
+              aiding governments in their regulatory roles.
+            </p>
+          </div>
+        </div>
       </div>
     </Container>
   );
