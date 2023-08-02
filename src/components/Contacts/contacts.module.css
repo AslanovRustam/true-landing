@@ -68,14 +68,15 @@
 .cube1,
 .cube2 {
   position: absolute;
-  width: 34.67em;
   z-index: -1;
 }
 .cube1 {
+  width: 30em;
   top: -1em;
   right: -24em;
 }
 .cube2 {
+  width: 34.67em;
   left: -23em;
   bottom: -7em;
 }

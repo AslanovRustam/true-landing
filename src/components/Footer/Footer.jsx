@@ -12,17 +12,25 @@ export default function Footer() {
           </a>
         </li>
         <li className={s.item}>
-          <a className={s.link} target="_blank" href="#">
+          <a
+            className={s.link}
+            target="_blank"
+            href="https://www.linkedin.com/"
+          >
             LinkedIn
           </a>
         </li>
         <li className={s.item}>
-          <a className={s.link} target="_blank" href="#">
+          <a className={s.link} target="_blank" href="https://twitter.com/">
             Twitter
           </a>
         </li>{" "}
         <li className={s.item}>
-          <a className={s.link} target="_blank" href="#">
+          <a
+            className={s.link}
+            target="_blank"
+            href="https://www.facebook.com/"
+          >
             Facebook
           </a>
         </li>

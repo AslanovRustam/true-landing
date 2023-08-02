@@ -1,5 +1,5 @@
 import { useState } from "react";
-import cube1 from "../../assets/Images/cube3.png";
+import cube1 from "../../assets/Images/cube5.png";
 import cube2 from "../../assets/Images/cube4.png";
 import s from "./contacts.module.css";
 

@@ -1,0 +1,122 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 6.83em 0;
+  margin-top: 6em;
+}
+.title {
+  color: #000;
+  text-align: right;
+  font-size: 6em;
+  font-weight: 500;
+  line-height: 115%;
+}
+.wrapper {
+  position: relative;
+  margin: 4.167em 0;
+  padding: 4.167em 9.167em;
+  border-radius: 2.5em;
+  background: var(--white);
+}
+.description {
+  font-size: 1.67em;
+  line-height: 150%;
+}
+.cube {
+  position: absolute;
+  top: -21em;
+  left: -16em;
+  width: 36.5em;
+  transform: rotate(-8deg);
+  z-index: -1;
+}
+.cube2 {
+  position: absolute;
+  bottom: -22em;
+  right: -20.4em;
+  width: 25em;
+  z-index: -1;
+}
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+.item {
+  padding: 4.33em 3.25em;
+  border-radius: 2.5em;
+  background-color: var(--blue2);
+}
+.subTitle {
+  text-align: left;
+  width: 11em;
+  font-size: 2.33em;
+  font-weight: 500;
+  line-height: 120%;
+}
+.subDescription {
+  margin-top: 1.5em;
+  font-size: 1.33em;
+  line-height: 150%;
+}
+.containerOptions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 6.83em;
+  margin-top: 4.16em;
+}
+.subTitleOptions {
+  margin-bottom: 0.875em;
+  font-size: 3.33em;
+  font-weight: 500;
+  line-height: 102%;
+}
+.wrapperOptions {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.descriptionOptions {
+  width: 48em;
+  padding: 2.4em 5.3em;
+  font-size: 1.67em;
+  line-height: 150%;
+  border-radius: 1.5em;
+  background: var(--white);
+}
+.decoration {
+  margin-right: -9em;
+  width: 48em;
+}
+.infoContainer {
+  position: relative;
+  padding: 0 6.83em;
+  margin-top: 4.58em;
+}
+.subTitleSecond {
+  font-size: 1.667em;
+  line-height: 150%;
+}
+.boldText {
+  font-weight: 500;
+}
+.scenario2 {
+  position: relative;
+  margin-top: 2.5em;
+  margin-left: 10em;
+  padding: 2.5em 4.8em;
+  border-radius: 1.5em;
+  font-size: 1.667em;
+  line-height: 150%;
+  background-color: var(--blue2);
+}
+
+.cube3 {
+  position: absolute;
+  top: -2em;
+  left: -20em;
+  width: 20.05em;
+  z-index: -1;
+}
