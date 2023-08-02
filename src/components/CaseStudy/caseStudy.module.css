@@ -37,7 +37,7 @@
   margin-bottom: 1.67em;
 }
 .itemValue:last-child {
-  background-color: var(--blue4);
+  background-color: var(--blue2);
 }
 .itemValue:last-child .amount {
   color: var(--black);
@@ -60,4 +60,63 @@
   left: 50%;
   bottom: -1.8em;
   z-index: 1;
+}
+.subTitleSecond {
+  font-size: 1.667em;
+  line-height: 150%;
+}
+.subTitleContainer,
+.infoContainer {
+  position: relative;
+  padding: 0 6.83em;
+  margin-top: 4.58em;
+}
+.subTitleContainer::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 5em;
+  height: 106%;
+  width: 0.2em;
+  background-color: var(--blue);
+  margin-right: 1em;
+}
+.scenario,
+.scenarioSecond,
+.borderedContainer {
+  padding: 2.5em 4.8em;
+  margin-top: 2.5em;
+  border-radius: 1.5em;
+  font-size: 1.667em;
+  line-height: 150%;
+  background-color: var(--blue2);
+}
+.scenarioSecond {
+  margin-top: 0;
+  background-color: unset;
+}
+.intro {
+  margin-bottom: 1.25em;
+  font-weight: 500;
+  line-height: 150%;
+}
+.borderedContainer {
+  width: 32.25em;
+  margin-top: 0;
+  background-color: unset;
+  border: 0.1em solid var(--blue);
+}
+.unsetMargin {
+  position: relative;
+  margin-top: 0;
+}
+.cube {
+  position: absolute;
+  top: -24em;
+  right: 0;
+  width: 24.1em;
+  z-index: -1;
+}
+.boldText {
+  font-weight: 500;
 }
