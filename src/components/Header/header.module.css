@@ -64,9 +64,8 @@
 }
 .menuLineItem:nth-child(3) {
   bottom: 0;
-  /* right: -1.51em; */
-  right: 0;
-  transform: translate(0) rotate(0.01deg);
+  left: 50%;
+  transform: translate(-50%) rotate(0.01deg);
   transition: all 0.3s ease-in-out;
 }
 .active .menuLineItem:first-child {
@@ -76,6 +75,7 @@
   width: 0;
 }
 .active .menuLineItem:nth-child(3) {
+  left: -1.5em;
   transform: translateY(-0.69375em) rotate(-45deg);
 }
 @media (orientation: portrait) {
