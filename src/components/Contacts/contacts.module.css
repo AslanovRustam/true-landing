@@ -80,3 +80,13 @@
   left: -23em;
   bottom: -7em;
 }
+
+@media (orientation: portrait) {
+  .сontainer {
+    margin: 1em 1em;
+    padding: 3em 0;
+  }
+  .input {
+    width: 30em;
+  }
+}

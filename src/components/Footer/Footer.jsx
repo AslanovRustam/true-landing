@@ -11,28 +11,30 @@ export default function Footer() {
             contact@audit.bet
           </a>
         </li>
-        <li className={s.item}>
-          <a
-            className={s.link}
-            target="_blank"
-            href="https://www.linkedin.com/"
-          >
-            LinkedIn
-          </a>
-        </li>
-        <li className={s.item}>
-          <a className={s.link} target="_blank" href="https://twitter.com/">
-            Twitter
-          </a>
-        </li>{" "}
-        <li className={s.item}>
-          <a
-            className={s.link}
-            target="_blank"
-            href="https://www.facebook.com/"
-          >
-            Facebook
-          </a>
+        <li className={s.itemSocsals}>
+          <div className={s.item}>
+            <a
+              className={s.link}
+              target="_blank"
+              href="https://www.linkedin.com/"
+            >
+              LinkedIn
+            </a>
+          </div>
+          <div className={s.item}>
+            <a className={s.link} target="_blank" href="https://twitter.com/">
+              Twitter
+            </a>
+          </div>
+          <div className={s.item}>
+            <a
+              className={s.link}
+              target="_blank"
+              href="https://www.facebook.com/"
+            >
+              Facebook
+            </a>
+          </div>
         </li>
       </ul>
 

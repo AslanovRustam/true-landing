@@ -8,7 +8,9 @@ export default function TaxCollection() {
     <>
       <Container>
         <div className={s.container}>
-          <h2 className={s.title}>Tax Collection</h2>
+          <h2 className={s.title}>
+            Tax <br className={s.mob}></br> Collection
+          </h2>
           <div className={s.wrapper}>
             <p className={s.subTitle}>Revolutionizing the iGaming Taxation</p>
             <p className={s.description}>

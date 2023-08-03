@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /* margin: 3.333em 0 2.666em 0; */
   position: fixed;
   top: 0;
   left: 0;
@@ -34,4 +33,57 @@
 .navLink:hover,
 .navLink:focus {
   color: var(--blue);
+}
+.active {
+  display: block;
+}
+.menu {
+  position: relative;
+  display: none;
+  height: 1.1875em;
+  cursor: pointer;
+  z-index: 2;
+}
+.menuLineItem {
+  position: absolute;
+  height: 0.15em;
+  width: 3em;
+  border-radius: 1.95em;
+  background-color: var(--black);
+  transition: all 0.3s ease-in-out;
+}
+.menuLineItem:first-child {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%) rotate(0.01deg);
+}
+.menuLineItem:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0.01deg);
+}
+.menuLineItem:nth-child(3) {
+  bottom: 0;
+  /* right: -1.51em; */
+  right: 0;
+  transform: translate(0) rotate(0.01deg);
+  transition: all 0.3s ease-in-out;
+}
+.active .menuLineItem:first-child {
+  transform: translate(-50%, 0.28125em) rotate(45deg);
+}
+.active .menuLineItem:nth-child(2) {
+  width: 0;
+}
+.active .menuLineItem:nth-child(3) {
+  transform: translateY(-0.69375em) rotate(-45deg);
+}
+@media (orientation: portrait) {
+  .menu {
+    display: block;
+  }
+  .list,
+  .mobSection {
+    display: none;
+  }
 }

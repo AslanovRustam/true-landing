@@ -6,7 +6,8 @@
   margin-top: 4.16em;
 }
 
-.subTitle {
+.subTitle,
+.subTitleAudit {
   margin-bottom: 0.875em;
   font-size: 3.33em;
   font-weight: 500;
@@ -119,4 +120,49 @@
 }
 .boldText {
   font-weight: 500;
+}
+.mob {
+  display: none;
+}
+@media (orientation: portrait) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    /* padding: 1.45em 3.63em; */
+  }
+  .description {
+    padding: 2.4em 1.5em;
+  }
+  .subTitleContainer::before {
+    left: 1em;
+  }
+  .subTitleContainer {
+    padding: 0 3em;
+  }
+  .scenario,
+  .scenarioSecond,
+  .borderedContainer {
+    padding: 2.5em 2em;
+  }
+  .cube {
+    top: -12em;
+    right: -4em;
+    width: 12.1em;
+  }
+  .container {
+    padding: 0 3em;
+  }
+  .mob {
+    display: block;
+  }
+  .subTitleAudit {
+    margin-top: 1em;
+  }
+  .infoContainer {
+    padding: 0 3em;
+    margin-bottom: 4.58em;
+  }
+  .borderedContainer {
+    width: auto;
+  }
 }

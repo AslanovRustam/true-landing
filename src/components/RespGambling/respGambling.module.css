@@ -116,3 +116,41 @@
 .boldText {
   font-weight: 500;
 }
+@media (orientation: portrait) {
+  .container {
+    padding: 0em 1em;
+  }
+  .title {
+    font-size: 4em;
+    margin-top: 1em;
+  }
+  .cube {
+    top: -21em;
+    left: -5em;
+    width: 26em;
+  }
+  .cube2 {
+    display: none;
+  }
+  .wrapper {
+    padding: 4.167em 2em;
+  }
+  .item {
+    width: auto;
+  }
+  .item:not(:first-child) {
+    margin-top: 2em;
+  }
+  .scenario,
+  .scenario2 {
+    padding: 2.5em 2em;
+  }
+  .borderedContainer {
+    width: auto;
+    padding: 2.5em 2em;
+  }
+  .infoContainer {
+    padding: 0 3em;
+    margin-bottom: 4.58em;
+  }
+}

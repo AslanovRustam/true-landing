@@ -120,3 +120,85 @@
   width: 20.05em;
   z-index: -1;
 }
+@media (orientation: portrait) {
+  .container {
+    padding: 0em 1em;
+  }
+  .title {
+    font-size: 4em;
+    margin-top: 1em;
+  }
+  .mob {
+    display: block;
+  }
+  .cube {
+    top: -24em;
+    left: -3em;
+    width: 24em;
+  }
+  .wrapper {
+    padding: 4.167em 2em;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerOptions,
+  .infoContainer {
+    padding: 0 3em;
+  }
+  .wrapperOptions {
+    position: relative;
+    flex-direction: column;
+  }
+  .descriptionOptions {
+    width: auto;
+    padding: 2.4em 2em;
+  }
+  .decoration {
+    position: absolute;
+    width: 23em;
+    top: -13em;
+    right: -2em;
+  }
+  .cube3 {
+    display: none;
+  }
+  .scenario2 {
+    margin-left: 0;
+    padding: 2.5em 2em;
+  }
+
+  .infoContainer {
+    margin-bottom: 4.58em;
+  }
+  /* .cube {
+    top: -21em;
+    left: -5em;
+    width: 26em;
+  }
+  .cube2 {
+    display: none;
+  }
+  .wrapper {
+    padding: 4.167em 2em;
+  }
+  .item {
+    width: auto;
+  }
+  .item:not(:first-child) {
+    margin-top: 2em;
+  }
+  .scenario,
+  .scenario2 {
+    padding: 2.5em 2em;
+  }
+  .borderedContainer {
+    width: auto;
+    padding: 2.5em 2em;
+  }
+  .infoContainer {
+    padding: 0 3em;
+    margin-bottom: 4.58em;
+  } */
+}

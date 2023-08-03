@@ -50,6 +50,35 @@
 }
 .audit {
   width: 55em;
-  /* height: 100%; */
   margin-right: -15em;
+}
+.mob {
+  display: none;
+}
+@media (orientation: portrait) {
+  .container {
+    padding: 0;
+  }
+  .title {
+    font-size: 4em;
+    margin-top: 1em;
+  }
+  .mob {
+    display: block;
+  }
+  .cube {
+    top: -22em;
+    left: -6em;
+    width: 30.5em;
+  }
+  .wrapper,
+  .containerAudit {
+    padding: 1.45em 3.63em;
+  }
+  .containerAudit {
+    flex-direction: column;
+  }
+  .wrapperAudit {
+    padding: 2.46em 0;
+  }
 }

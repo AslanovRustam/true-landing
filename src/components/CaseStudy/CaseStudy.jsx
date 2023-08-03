@@ -74,7 +74,9 @@ export default function CaseStudy() {
         environment.
       </div>
       <div className={s.container}>
-        <p className={s.subTitle}>Take Control with AuditBet</p>
+        <p className={s.subTitleAudit}>
+          Take Control <br className={s.mob}></br>with AuditBet
+        </p>
       </div>
       <div className={`${s.scenario} ${s.unsetMargin}`}>
         Get ready to experience superior accuracy, real-time data access, and

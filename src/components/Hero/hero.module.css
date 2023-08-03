@@ -30,3 +30,12 @@
   width: 33.5em;
   z-index: -1;
 }
+@media (orientation: portrait) {
+  .container {
+    flex-direction: column;
+    padding: 1.45em 3.63em;
+  }
+  .image {
+    margin-top: 2em;
+  }
+}

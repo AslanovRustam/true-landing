@@ -9,7 +9,9 @@ export default function AuditBet() {
   return (
     <Container>
       <div className={s.container}>
-        <h2 className={s.title}>AuditBet Explorer</h2>
+        <h2 className={s.title}>
+          AuditBet <br className={s.mob}></br> Explorer
+        </h2>
         <div className={s.wrapper}>
           <p className={s.description}>
             Welcome to Explorer — a real-time monitoring tool for online

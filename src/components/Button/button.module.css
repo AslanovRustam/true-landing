@@ -16,3 +16,8 @@
   color: var(--blue);
   border-color: var(--blue);
 }
+@media (orientation: portrait) {
+  .button {
+    width: 100%;
+  }
+}
