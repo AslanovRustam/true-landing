@@ -109,6 +109,6 @@
     padding: 3em 0;
   }
   .input {
-    width: 30em;
+    width: 30em !important;
   }
 }
