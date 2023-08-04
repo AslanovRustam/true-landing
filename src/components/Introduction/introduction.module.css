@@ -58,7 +58,7 @@
   left: -10em;
   width: 21.17em;
   z-index: -1;
-  animation: levitate 8s ease-in-out alternate infinite;
+  animation: levitate 10s ease-in-out alternate infinite;
 }
 
 .icon {
