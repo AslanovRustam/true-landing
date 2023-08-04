@@ -1,7 +1,9 @@
 import { useState } from "react";
+import ReactFlagsSelect from "react-flags-select";
 import cube1 from "../../assets/Images/cube5.png";
 import cube2 from "../../assets/Images/cube4.png";
 import s from "./contacts.module.css";
+import ScrollAnimation from "../../helpers/ScrollAnimation";
 
 export default function Contacts() {
   const [formData, setFormData] = useState({
@@ -16,15 +18,25 @@ export default function Contacts() {
     email: false,
     governmentalBody: false,
   });
+  const [wrongInput, setWrongInput] = useState("");
+
+  const validateEmail = (value) => {
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+    if (!emailRegex.test(value)) {
+      setWrongInput("Wrong email");
+      return;
+    }
+    setWrongInput("");
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    validateEmail(formData.email);
   };
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    console.log("click");
     const newShowErrors = {};
     let hasError = false;
 
@@ -39,10 +51,8 @@ export default function Contacts() {
     });
 
     setShowErrors(newShowErrors);
-    console.log("hasError", hasError);
 
     if (!hasError) {
-      console.log("formData111", formData);
       setFormData({
         country: "",
         name: "",
@@ -51,10 +61,27 @@ export default function Contacts() {
       });
     }
   };
+
   return (
     <div className={s.сontainer}>
-      <h2 className={s.title}>Contact us</h2>
+      <ScrollAnimation x={-100} y={0}>
+        <h2 className={s.title}>Contact us</h2>
+      </ScrollAnimation>
       <form className={s.form} onSubmit={handleSubmit}>
+        <label className={s.label}>
+          <span className={s.name}>Country</span>
+          <ReactFlagsSelect
+            className={s.selectCountry}
+            selectButtonClassName={s.input}
+            selected={formData.country}
+            onSelect={(code) => setFormData({ ...formData, country: code })}
+            placeholder="Choose an option"
+            searchable={true}
+          />
+          {showErrors.country && (
+            <span className={s.error}>Please, choose Country</span>
+          )}
+        </label>
         <label className={s.label}>
           <span className={s.name}>Name</span>
           <input
@@ -81,6 +108,7 @@ export default function Contacts() {
             onChange={handleChange}
             required
           />
+          {wrongInput && <p className={s.wrongInput}>{wrongInput}</p>}
           {showErrors.email && (
             <span className={s.error}>Please, fill Email</span>
           )}

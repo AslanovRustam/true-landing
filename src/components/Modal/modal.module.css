@@ -41,16 +41,16 @@
 .list {
   display: flex;
   flex-direction: column;
-  padding-bottom: 1.75em;
+  /* padding-bottom: 1.75em; */
   margin-bottom: 1.75em;
   border-bottom: 0.2em solid var(--blue);
 }
 .item {
-  font-style: normal;
-  font-weight: 400;
+  margin-bottom: 1em;
   font-size: 4em;
   line-height: 131.5%;
   transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
   cursor: pointer;
 }
 .item:hover,

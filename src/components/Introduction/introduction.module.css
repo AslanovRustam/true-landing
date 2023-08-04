@@ -58,7 +58,9 @@
   left: -10em;
   width: 21.17em;
   z-index: -1;
+  animation: levitate 8s ease-in-out alternate infinite;
 }
+
 .icon {
   width: 100%;
   height: auto;
@@ -92,7 +94,16 @@
   font-size: 1.33em;
   line-height: 150%;
 }
-
+@keyframes levitate {
+  from {
+    transform: translate(0, 0);
+    rotate: -5deg;
+  }
+  to {
+    transform: translate(0.2em, 2em);
+    rotate: 2deg;
+  }
+}
 @media (orientation: portrait) {
   .icon,
   .cube {
@@ -107,5 +118,8 @@
   }
   .list {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .subTitleContainer {
+    margin-bottom: 4em;
   }
 }

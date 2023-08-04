@@ -30,6 +30,7 @@
   width: 36.5em;
   transform: rotate(-8deg);
   z-index: -1;
+  animation: levitate 12s ease-in-out alternate infinite;
 }
 .cube2 {
   position: absolute;
@@ -37,6 +38,7 @@
   right: -20.4em;
   width: 25em;
   z-index: -1;
+  animation: levitate 9s ease-in-out alternate infinite;
 }
 .list {
   display: grid;
@@ -119,6 +121,19 @@
   left: -20em;
   width: 20.05em;
   z-index: -1;
+}
+.mob {
+  display: none;
+}
+@keyframes levitate {
+  from {
+    transform: translate(0, 0);
+    rotate: -5deg;
+  }
+  to {
+    transform: translate(0.2em, 2em);
+    rotate: 2deg;
+  }
 }
 @media (orientation: portrait) {
   .container {

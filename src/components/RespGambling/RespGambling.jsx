@@ -1,4 +1,5 @@
 import Container from "../Container/Container";
+import ScrollAnimation from "../../helpers/ScrollAnimation";
 import cube from "../../assets/Images/cube5.png";
 import cube2 from "../../assets/Images/cube3.png";
 import { dataGambling } from "../../assets/data/data";
@@ -9,15 +10,22 @@ export default function RespGambling() {
     <>
       <Container>
         <div className={s.container}>
-          <h2 className={s.title}>Responsible Gambling</h2>
+          <ScrollAnimation x={100} y={0}>
+            <h2 className={s.title}>Responsible Gambling</h2>
+          </ScrollAnimation>
           <div className={s.wrapper}>
-            <p className={s.subTitle}>Overview</p>
-            <p className={s.description}>
-              AuditBet is driven by the belief in responsible and transparent
-              online gambling. That is why we have developed a blockchain-based
-              technology to address some of the industry’s major concerns:
-              responsible gambling and underage betting.
-            </p>
+            <ScrollAnimation x={-100} y={0}>
+              <p className={s.subTitle}>Overview</p>
+            </ScrollAnimation>
+            <ScrollAnimation x={100} y={0}>
+              <p className={s.description}>
+                AuditBet is driven by the belief in responsible and transparent
+                online gambling. That is why we have developed a
+                blockchain-based technology to address some of the industry’s
+                major concerns: responsible gambling and underage betting.
+              </p>
+            </ScrollAnimation>
+
             <img className={s.cube} src={cube} alt="cube" />
             <img className={s.cube2} src={cube} alt="cube" />
           </div>
@@ -25,11 +33,13 @@ export default function RespGambling() {
         <ul className={s.list}>
           {dataGambling.map(({ id, image, title, description }) => (
             <li className={s.item} key={id}>
-              <div className={s.topSection}>
-                <p className={s.titleIcon}>{title}</p>
-                <img className={s.imageIcon} src={image} alt={title} />
-              </div>
-              <p className={s.description}>{description}</p>
+              <ScrollAnimation x={0} y={100}>
+                <div className={s.topSection}>
+                  <p className={s.titleIcon}>{title}</p>
+                  <img className={s.imageIcon} src={image} alt={title} />
+                </div>
+                <p className={s.description}>{description}</p>
+              </ScrollAnimation>
             </li>
           ))}
         </ul>

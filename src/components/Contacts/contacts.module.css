@@ -29,12 +29,13 @@
   line-height: 150%;
 }
 .input {
-  font-size: 1em;
-  width: 50em;
-  padding: 0.5em 0;
-  border: none;
-  outline: none;
-  border-bottom: 0.15em solid var(--black);
+  font-size: 1em !important;
+  width: 50em !important;
+  padding: 0.5em 0 !important;
+  border: none !important;
+  outline: none !important;
+  border-bottom: 0.15em solid var(--black) !important;
+  border-radius: 0 !important;
   transition: all 0.3s ease-in-out;
 }
 .input:hover,
@@ -74,16 +75,37 @@
   width: 30em;
   top: -1em;
   right: -24em;
+  animation: levitate 8s ease-in-out alternate infinite;
 }
 .cube2 {
   width: 34.67em;
   left: -23em;
   bottom: -7em;
+  animation: levitate 6s ease-in-out alternate infinite;
+}
+.selectCountry {
+  padding: 0;
+}
+.wrongInput {
+  position: absolute;
+  left: 43em;
+  bottom: 0em;
+  color: var(--red);
+}
+@keyframes levitate {
+  from {
+    transform: translate(0, 0);
+    rotate: -5deg;
+  }
+  to {
+    transform: translate(0.2em, 2em);
+    rotate: 2deg;
+  }
 }
 
 @media (orientation: portrait) {
   .сontainer {
-    margin: 1em 1em;
+    margin: 1em 1em 4em;
     padding: 3em 0;
   }
   .input {

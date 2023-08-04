@@ -117,6 +117,7 @@
   right: 0;
   width: 24.1em;
   z-index: -1;
+  animation: levitate 12s ease-in-out alternate infinite;
 }
 .boldText {
   font-weight: 500;
@@ -124,11 +125,20 @@
 .mob {
   display: none;
 }
+@keyframes levitate {
+  from {
+    transform: translate(0, 0);
+    rotate: -5deg;
+  }
+  to {
+    transform: translate(0.2em, 2em);
+    rotate: 2deg;
+  }
+}
 @media (orientation: portrait) {
   .wrapper {
     display: flex;
     flex-direction: column;
-    /* padding: 1.45em 3.63em; */
   }
   .description {
     padding: 2.4em 1.5em;

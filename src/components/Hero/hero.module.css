@@ -29,6 +29,17 @@
   bottom: -18em;
   width: 33.5em;
   z-index: -1;
+  animation: levitate 8s ease-in-out alternate infinite;
+}
+@keyframes levitate {
+  from {
+    transform: translate(0, 0);
+    rotate: -5deg;
+  }
+  to {
+    transform: translate(0.2em, 2em);
+    rotate: 2deg;
+  }
 }
 @media (orientation: portrait) {
   .container {

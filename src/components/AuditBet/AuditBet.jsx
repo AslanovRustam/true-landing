@@ -1,4 +1,5 @@
 import Container from "../Container/Container";
+import ScrollAnimation from "../../helpers/ScrollAnimation";
 import cube from "../../assets/Images/cube2.png";
 import cube2 from "../../assets/Images/cube6.png";
 import cube3 from "../../assets/Images/cube7.png";
@@ -9,9 +10,11 @@ export default function AuditBet() {
   return (
     <Container>
       <div className={s.container}>
-        <h2 className={s.title}>
-          AuditBet <br className={s.mob}></br> Explorer
-        </h2>
+        <ScrollAnimation x={100} y={0}>
+          <h2 className={s.title}>
+            AuditBet <br className={s.mob}></br> Explorer
+          </h2>
+        </ScrollAnimation>
         <div className={s.wrapper}>
           <p className={s.description}>
             Welcome to Explorer — a real-time monitoring tool for online
@@ -19,37 +22,44 @@ export default function AuditBet() {
             to offer transparency of every gambling transaction while keeping
             data privacy.
           </p>
+
           <img className={s.cube} src={cube} alt="cube" />
           <img className={s.cube2} src={cube2} alt="cube" />
         </div>
       </div>
       <ul className={s.list}>
         <li className={s.item}>
-          <p className={s.subTitle}>Embracing Real-Time Transparency</p>
-          <p className={s.subDescription}>
-            Transparency in online gambling is no longer a lofty ideal — it’s an
-            achievable goal. With Explorer, you get real-time insights into
-            every transaction happening on any AuditBet Explorer-integrated
-            platform. From the smallest bet to the largest win, every rollback
-            and payout — all events are recorded, accessible, and completely
-            transparent.
-          </p>
+          <ScrollAnimation x={0} y={100}>
+            <p className={s.subTitle}>Embracing Real-Time Transparency</p>
+            <p className={s.subDescription}>
+              Transparency in online gambling is no longer a lofty ideal — it’s
+              an achievable goal. With Explorer, you get real-time insights into
+              every transaction happening on any AuditBet Explorer-integrated
+              platform. From the smallest bet to the largest win, every rollback
+              and payout — all events are recorded, accessible, and completely
+              transparent.
+            </p>
+          </ScrollAnimation>
         </li>
         <li className={s.item}>
-          <p className={s.subTitle}>Ensuring Anonymity, Always</p>
-          <p className={s.subDescription}>
-            We strike a perfect balance between transparency and privacy. All
-            data available on Explorer is fully anonymized. Although player and
-            casino identities are hashed and remain confidential, the
-            information related to transactions remains transparent and
-            accessible.
-          </p>
+          <ScrollAnimation x={0} y={50}>
+            <p className={s.subTitle}>Ensuring Anonymity, Always</p>
+            <p className={s.subDescription}>
+              We strike a perfect balance between transparency and privacy. All
+              data available on Explorer is fully anonymized. Although player
+              and casino identities are hashed and remain confidential, the
+              information related to transactions remains transparent and
+              accessible.
+            </p>
+          </ScrollAnimation>
         </li>
       </ul>
       <div className={s.containerOptions}>
-        <p className={s.subTitleOptions}>
-          A World of Comprehensive Search Options
-        </p>
+        <ScrollAnimation x={-100} y={0}>
+          <p className={s.subTitleOptions}>
+            A World of Comprehensive Search Options
+          </p>
+        </ScrollAnimation>
       </div>
       <div className={s.wrapperOptions}>
         <div className={s.descriptionOptions}>

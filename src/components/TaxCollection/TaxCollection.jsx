@@ -1,3 +1,4 @@
+import ScrollAnimation from "../../helpers/ScrollAnimation";
 import cube from "../../assets/Images/cube4.png";
 import audit from "../../assets/Images/auditBet.png";
 import Container from "../Container/Container";
@@ -8,11 +9,15 @@ export default function TaxCollection() {
     <>
       <Container>
         <div className={s.container}>
-          <h2 className={s.title}>
-            Tax <br className={s.mob}></br> Collection
-          </h2>
+          <ScrollAnimation x={100} y={0}>
+            <h2 className={s.title}>
+              Tax <br className={s.mob}></br> Collection
+            </h2>
+          </ScrollAnimation>
           <div className={s.wrapper}>
-            <p className={s.subTitle}>Revolutionizing the iGaming Taxation</p>
+            <ScrollAnimation x={-100} y={0}>
+              <p className={s.subTitle}>Revolutionizing the iGaming Taxation</p>
+            </ScrollAnimation>
             <p className={s.description}>
               Welcome to a new era of tax collection in the iGaming industry.
               With AuditBet, we bridge the gap between iGaming operators, like
@@ -29,7 +34,9 @@ export default function TaxCollection() {
         <Container>
           <div className={s.containerAudit}>
             <div className={s.wrapperAudit}>
-              <p className={s.subTitle}>AuditBet</p>
+              <ScrollAnimation x={-100} y={0}>
+                <p className={s.subTitle}>AuditBet</p>
+              </ScrollAnimation>
               <p className={s.description}>
                 We utilize a blockchain-based technology that records every bet,
                 win, and rollback within the iGaming ecosystem. We operate as a

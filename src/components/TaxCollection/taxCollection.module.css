@@ -36,6 +36,7 @@
   left: -23em;
   width: 43.5em;
   z-index: -1;
+  animation: levitate 6s ease-in-out alternate infinite;
 }
 .section {
   background-color: var(--blue2);
@@ -54,6 +55,16 @@
 }
 .mob {
   display: none;
+}
+@keyframes levitate {
+  from {
+    transform: translate(0, 0);
+    rotate: -5deg;
+  }
+  to {
+    transform: translate(0.2em, 2em);
+    rotate: 2deg;
+  }
 }
 @media (orientation: portrait) {
   .container {
