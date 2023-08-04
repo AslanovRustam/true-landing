@@ -42,6 +42,9 @@
 .input:focus {
   border-color: var(--blue);
 }
+.inputWrongMail {
+  border-bottom: 0.15em solid var(--red) !important;
+}
 .error {
   position: absolute;
   top: 7.4em;

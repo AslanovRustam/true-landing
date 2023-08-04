@@ -101,7 +101,7 @@ export default function Contacts() {
         <label className={s.label}>
           <span className={s.name}>Email</span>
           <input
-            className={s.input}
+            className={`${s.input} ${wrongInput ? s.inputWrongMail : ""}`}
             name="email"
             placeholder="Type your email"
             value={formData.email}
